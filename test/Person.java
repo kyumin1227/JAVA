@@ -25,6 +25,12 @@ public class Person {
      * default              O              O             X            X
      * private              O              X             X            X
      */
+    /*
+     * member 변수를 private로 설정하는 이유
+     * 1. 잘못된 값을 성정하는 것을 막아줄 필요가 있다.
+     * 2. 읽기전용 멤버 변수로 만들 수 있다.
+     * 3. 클래스 소스코드를 업그레이드 할 경우, 그 클래스를 사용하는 다른 코드에 미치는 영향을 최소화 할 수 있다.
+     */
     private String name = "홍길동";
     private int myAge;
     protected String dept = "컴정";
