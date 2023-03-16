@@ -3,6 +3,7 @@ public class StringTest {
         String proverb = "A barking dog";
         String s1, s2 ,s3, s4;
         
+        
         System.out.println(proverb.length());
         proverb.concat(" never Bites");
         System.out.println(proverb);

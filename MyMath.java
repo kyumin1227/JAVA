@@ -10,5 +10,5 @@ public class MyMath {
         System.out.println(obj.square(9));
         System.out.println(obj.square(3.8));
     }
-    
+        
 }
