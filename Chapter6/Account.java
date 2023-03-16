@@ -1,3 +1,4 @@
+package Chapter6;
 import java.text.DecimalFormat;
 
 public class Account {

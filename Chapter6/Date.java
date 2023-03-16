@@ -1,3 +1,4 @@
+package Chapter6;
 public class Date {
     private int year, day;
     private String month;

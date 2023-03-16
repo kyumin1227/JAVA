@@ -1,4 +1,4 @@
-package test;
+package Chapter6;
 
 import java.time.LocalDate;
 
