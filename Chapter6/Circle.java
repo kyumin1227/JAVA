@@ -1,4 +1,4 @@
-package test;
+package Chapter6;
 
 public class Circle {
     private Point p;
