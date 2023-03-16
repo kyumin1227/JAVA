@@ -2,7 +2,7 @@ package Chapter6;
 
 public class MyCounter {
     int counter;
-    MyCounter() {
-        counter = 1;
+    MyCounter(int value) {
+        counter = value;
     }
 }
