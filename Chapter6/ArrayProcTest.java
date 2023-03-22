@@ -1,15 +1,11 @@
 package Chapter6;
-
+import java.util.Scanner;
 public class ArrayProcTest {
     public static void main(String[] args) {
-        
-        int[] list = {1, 2, 3, 4, 5};
-        ArrayProc obj = new ArrayProc();
+        int [] student = new int[5];
 
-        obj.inc(list);
-
-        for(int i = 0; i<list.length; i++) {
-            System.out.print(list[i]+ " ");
-        }
+        ArrayProc ap = new ArrayProc();
+        ap.getValues(student);
+        System.out.println("평균은 = "+ap.getAverage(student));
     }
 }
