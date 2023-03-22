@@ -1,8 +1,8 @@
 package Chapter6;
 
 public class MyCounter {
-    int counter;
-    MyCounter(int value) {
-        counter = value;
+    int value;
+    void inc(int a) {
+        a = a+1;
     }
 }
