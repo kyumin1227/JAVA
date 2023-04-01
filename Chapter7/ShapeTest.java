@@ -1,13 +1,48 @@
 package Chapter7;
 
+class Shape {
+    protected int x, y;
+    public void draw() {
+        System.out.println("Shape Draw");
+    }
+}
+
+class Rectangle extends Shape {
+    private int width, height;
+    
+    public void draw() {
+        System.out.println("Rectangle Draw");
+    }
+}
+
+class Triangle extends Shape {
+    private int width, height;
+    
+    public void draw() {
+        System.out.println("Triangle Draw");
+    }
+}
+
+class Circle extends Shape {
+    private int width, height;
+    
+    public void draw() {
+        System.out.println("Circle Draw");
+    }
+}
+
 public class ShapeTest {
     public static void main(String[] args) {
-        Rectangle r1 = new Rectangle(5, 3, 10, 20);
-        Rectangle r2 = new Rectangle(8, 9, 10, 20);
+        Shape s1, s2, s3, s4;
         
-        r1.print();
-        r1.draw();
-        r2.print();
-        r2.draw();
+        s1 = new Shape();
+        s2 = new Rectangle();
+        s3 = new Triangle();
+        s4 = new Circle();
+
+        s1.draw();
+        s2.draw();
+        s3.draw();
+        s4.draw();
     }
 }
