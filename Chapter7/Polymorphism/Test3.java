@@ -16,3 +16,5 @@ public class Test3 {
         }
     }
 }
+
+// object
