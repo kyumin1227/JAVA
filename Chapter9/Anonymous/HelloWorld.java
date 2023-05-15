@@ -8,7 +8,9 @@ public class HelloWorld {
 
     }
 
-    Hello frenchHello = new Hello() {
+    Hello engHello = new EnglishGreeting();engHello.greetSomeone("world");
+
+    Hello frenchHello = new Hello() {    
         @Override
         public void greetSomeone(String someone) {
             System.out.println("Salut tout le monde " + someone);
@@ -19,6 +21,10 @@ public class HelloWorld {
     Hello spanHello = null;
 
     spanHello.greetSomeone
+
+    public void greetSomeone(String someone) {
+        System.out.println();
+    }
 
     public static void main(String[] args) {
         HelloWorld hw = new HelloWorld();
