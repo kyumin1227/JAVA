@@ -1,6 +1,7 @@
 package lambda;
 
 import java.time.LocalDate;
+import java.time.Period;
 
 public class Person {
     private String name;
@@ -29,6 +30,11 @@ public class Person {
 
     public Sex getGender() {
         return gender;
+    }
+
+    public int getAge() {
+        Period period = Period.between(birthDate, LocalDate.now());
+        return period.getYears();
     }
 
     public void printPerson() {
