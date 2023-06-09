@@ -11,7 +11,7 @@ public class Test {
         Person p3 = new Person("또치", LocalDate.of(1988, 5, 31), "gdhong@gmail.com", Sex.FEMALE);
 
         // List는 인터페이스, 이 인터페이스를 구현하는 클래스로 ArrayList, LinkedList 등이 있다.
-        List<Person> list = new ArrayList<>(0);
+        List<Person> list = new ArrayList<>();
         list.add(p1);
         list.add(p2);
         list.add(p3);
@@ -59,6 +59,7 @@ public class Test {
         for (Person p : persons) {
             if (p.getAge() >= age) {
                 p.printPerson();
+                System.out.println();
             }
         }
     }
